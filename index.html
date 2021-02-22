@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Calculator</title>
+</head>
+<body>
+    <main>
+        <div class="calculator">
+            <button class="hint">Как использовать?</button>
+            <div class="output">
+                <textarea data-current-operand class="current-operand calc-screen" value="0" disabled></textarea>
+            </div>
+            <button data-clear class="square-button red">C</button>
+            <button data-operation class="square-button">pow</button>
+            <button data-sqrt class="square-button">sqrt</button>
+            <button data-operation class="square-button">/</button>
+            <button data-number class="square-button">7</button>
+            <button data-number class="square-button">8</button>
+            <button data-number class="square-button">9</button>
+            <button data-operation class="square-button">*</button>
+            <button data-number class="square-button">4</button>
+            <button data-number class="square-button">5</button>
+            <button data-number class="square-button">6</button>
+            <button data-operation class="square-button">-</button>
+            <button data-number class="square-button">1</button>
+            <button data-number class="square-button">2</button>
+            <button data-number class="square-button">3</button>
+            <button data-operation class="square-button">+</button>
+            <button data-number class="square-button">0</button>
+            <div class="button-set">
+                <button data-del class="square-button small">del</button>
+                <button data-negative class="square-button small">+/-</button>
+            </div>
+            <button data-decimal class="square-button">.</button>
+            <button data-equals class="square-button green">=</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

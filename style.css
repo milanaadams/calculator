@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background: url("bg.svg") center center no-repeat;
+}
+
+main{
+    display: flex;
+    width: 1140px;
+    height: 100vh;
+    padding: 100px;
+    margin: 0 auto;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+button{
+    outline: none;
+}
+
+.calculator{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 345px;
+    height: 538px;
+    padding: 17px 14px;
+    background-color: #fff;
+    box-shadow: 0px 0px 12px 3px rgba(99, 145, 165, 0.25);
+}
+
+.hint{
+    font-size: 10px;
+    text-decoration: underline;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+    -webkit-transition: opacity 0.3s ease-in;
+    -moz-transition: opacity 0.3s ease-in;
+    -ms-transition: opacity 0.3s ease-in;
+    -o-transition: opacity 0.3s ease-in;
+}
+
+.hint:hover{
+    opacity: 0.5;
+}
+
+.calc-screen{
+    border: none;
+    resize: none;
+}
+
+.output{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 317px;
+    min-height: 90px;
+    
+}
+
+.current-operand{
+    display: flex;
+    flex-wrap: wrap;
+    width: 317px;
+    min-height: 60px;
+    text-align: right;
+    padding: 5px;
+    font-size: 38px;
+    line-height: 38px;
+    background-color: #fff;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.previous-operand{
+    width: 100%;
+    height: 35px;
+    text-align: right;
+    font-size: 28px;
+}
+
+.square-button{
+    border: 0;
+    width: 68px;
+    height: 68px;
+    background-color: #F6F8F9;
+    font-size: 24px;
+    color: #464D4F;
+    font-weight: 300;
+    transition: background-color 0.3s ease-in;
+    -webkit-transition: background-color 0.3s ease-in;
+    -moz-transition: background-color 0.3s ease-in;
+    -ms-transition: background-color 0.3s ease-in;
+    -o-transition: background-color 0.3s ease-in;
+    cursor: pointer;
+}
+
+.button-set{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 68px;
+    height: 68px;
+}
+
+.square-button.small{
+    height: 30px;
+}
+
+.square-button:hover{
+    background-color: #EDEEEF;
+}
+
+.square-button:active{
+    background-color: #EDEEEF;
+    color: #EDEEEF;
+}
+
+.square-button.red{
+    background-color: #F65073;
+    color: #fff;
+}
+
+.square-button.red:hover{
+    background-color: #DD456A;
+}
+
+.square-button.red:active{
+    background-color: #DD456A;
+    color: #DD456A;
+}
+
+
+.square-button.green{
+    background-color: #00CCBD;
+    color: #fff;
+}
+
+.square-button.green:hover{
+    background-color: #02BAA8;
+}
+
+.square-button.green:active{
+    background-color: #02BAA8;
+    color: #02BAA8;
+}
